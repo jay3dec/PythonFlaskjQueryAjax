@@ -13,9 +13,9 @@ def signUp():
 
 @app.route('/signUpUser', methods=['POST'])
 def signUpUser():
-    user =  request.form['username'];
-    password = request.form['password'];
-    return json.dumps({'status':'OK','user':user,'pass':password});
+    user =  request.form['username']
+    password = request.form['password']
+    return json.dumps({'status':'OK','user':user,'pass':password})
 
 if __name__=="__main__":
     app.run()
